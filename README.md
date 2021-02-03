@@ -19,13 +19,13 @@
 
 ##### 2. Spring e Injeção de Dependências
 <pre>
-- [ ] 2.1 Por que aprender e usar Spring?                                                                         6m 57s
-- [ ] 2.2 Conhecendo o ecossistema Spring                                                                         9m 15s
-- [ ] 2.3 Spring vs Jakarta EE (Java EE)                                                                          9m 29s
-- [ ] 2.4 Conhecendo o Spring Boot                                                                                6m 9s
-- [ ] 2.5 Criando um projeto Spring Boot com Spring Initializr                                                    13m 57s
-- [ ] 2.6 Conhecendo o Maven e o pom.xml de um projeto Spring Boot                                                24m 26s
-- [ ] 2.7 Criando um controller com Spring MVC                                                                    4m 36s
+- [x] 2.1 Por que aprender e usar Spring?                                                                         6m 57s
+- [x] 2.2 Conhecendo o ecossistema Spring                                                                         9m 15s
+- [x] 2.3 Spring vs Jakarta EE (Java EE)                                                                          9m 29s
+- [x] 2.4 Conhecendo o Spring Boot                                                                                6m 9s
+- [x] 2.5 Criando um projeto Spring Boot com Spring Initializr                                                    13m 57s
+- [x] 2.6 Conhecendo o Maven e o pom.xml de um projeto Spring Boot                                                24m 26s
+- [x] 2.7 Criando um controller com Spring MVC                                                                    4m 36s
 - [ ] 2.8 Restart mais rápido da aplicação com DevTools                                                           4m 1s
 - [ ] 2.9 O que é injeção de dependências?                                                                        24m 57s
 - [ ] 2.10 Conhecendo o IoC Container do Spring                                                                   2m 42s
