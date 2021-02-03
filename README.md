@@ -28,8 +28,8 @@
 - [x] 2.7 Criando um controller com Spring MVC                                                                    4m 36s
 - [x] 2.8 Restart mais rápido da aplicação com DevTools                                                           4m 1s
 - [x] 2.9 O que é injeção de dependências?                                                                        24m 57s
-- [ ] 2.10 Conhecendo o IoC Container do Spring                                                                   2m 42s
-- [ ] 2.11 Definindo beans com @Component                                                                         9m 14s
+- [x] 2.10 Conhecendo o IoC Container do Spring                                                                   2m 42s
+- [x] 2.11 Definindo beans com @Component                                                                         9m 14s
 - [ ] 2.12 Injetando dependências (beans Spring)                                                                  14m 57s
 - [ ] 2.13 Usando @Configuration e @Bean para definir beans                                                       15m 15s
 - [ ] 2.14 Conhecendo os pontos de injeção e a anotação @Autowired                                                7m 55s
