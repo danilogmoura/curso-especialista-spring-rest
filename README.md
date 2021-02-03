@@ -26,7 +26,7 @@
 - [x] 2.5 Criando um projeto Spring Boot com Spring Initializr                                                    13m 57s
 - [x] 2.6 Conhecendo o Maven e o pom.xml de um projeto Spring Boot                                                24m 26s
 - [x] 2.7 Criando um controller com Spring MVC                                                                    4m 36s
-- [ ] 2.8 Restart mais rápido da aplicação com DevTools                                                           4m 1s
+- [x] 2.8 Restart mais rápido da aplicação com DevTools                                                           4m 1s
 - [ ] 2.9 O que é injeção de dependências?                                                                        24m 57s
 - [ ] 2.10 Conhecendo o IoC Container do Spring                                                                   2m 42s
 - [ ] 2.11 Definindo beans com @Component                                                                         9m 14s
