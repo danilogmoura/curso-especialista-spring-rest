@@ -32,7 +32,7 @@
 - [x] 2.11 Definindo beans com @Component                                                                         9m 14s
 - [x] 2.12 Injetando dependências (beans Spring)                                                                  14m 57s
 - [x] 2.13 Usando @Configuration e @Bean para definir beans                                                       15m 15s
-- [ ] 2.14 Conhecendo os pontos de injeção e a anotação @Autowired                                                7m 55s
+- [x] 2.14 Conhecendo os pontos de injeção e a anotação @Autowired                                                7m 55s
 - [ ] 2.15 Dependência opcional com @Autowired                                                                    2m 52s
 - [ ] 2.16 Ambiguidade de beans e injeção de lista de beans                                                       5m 25s
 - [ ] 2.17 Desambiguação de beans com @Primary                                                                    2m 29s
