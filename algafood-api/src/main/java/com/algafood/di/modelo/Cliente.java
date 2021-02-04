@@ -5,7 +5,7 @@ public class Cliente {
     private String nome;
     private String email;
     private String telefone;
-    private boolean ativo = false;
+    private boolean ativo;
 
     public Cliente(String nome, String email, String telefone) {
         this.nome = nome;
