@@ -51,7 +51,7 @@
 
 ##### 3. Introdução ao JPA e Hibernate
 <pre>
-- [ ] 3.1 Instalando o MySQL Server e MySQL Workbench                                                             5m 1s
+- [x] 3.1 Instalando o MySQL Server e MySQL Workbench                                                             5m 1s
 - [ ] 3.2 O que é JPA e Hibernate?                                                                                17m 33s
 - [ ] 3.3 Adicionando JPA e configurando o Data Source                                                            14m 26s
 - [ ] 3.4 Mapeando entidades com JPA                                                                              11m 20s
