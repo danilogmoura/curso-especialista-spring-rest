@@ -37,7 +37,7 @@
 - [x] 2.16 Ambiguidade de beans e injeção de lista de beans                                                       5m 25s
 - [x] 2.17 Desambiguação de beans com @Primary                                                                    2m 29s
 - [x] 2.18 Desambiguação de beans com @Qualifier                                                                  5m 22s
-- [ ] 2.19 Desambiguação de beans com anotação customizada                                                        6m 30s
+- [x] 2.19 Desambiguação de beans com anotação customizada                                                        6m 30s
 - [ ] 2.20 Mudando o comportamento da aplicação com Spring Profiles                                               11m 17s
 - [ ] 2.21 Criando métodos de callback do ciclo de vida dos beans                                                 8m 39s
 - [ ] 2.22 Publicando e consumindo eventos customizados                                                           13m 30s
