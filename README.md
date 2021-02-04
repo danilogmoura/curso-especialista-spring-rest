@@ -1,6 +1,6 @@
 # Curso Especialista Spring REST
 
-- Trainamento oferecido pela empresa [AlgaWorks](https://cafe.algaworks.com/esr-lista-de-espera/).
+- Trainamento oferecido pela empresa [AlgaWorks](https://cafe.algaworks.com/).
 
 - **Início:** 2021-02-02
 - **Termino:** Em progresso
@@ -51,8 +51,8 @@
 
 ##### 3. Introdução ao JPA e Hibernate
 <pre>
-- [x] 3.1 Instalando o MySQL Server e MySQL Workbench                                                             5m 1s
-- [ ] 3.2 O que é JPA e Hibernate?                                                                                17m 33s
+- [x] 3.1 Instalando o PostgreSQL e PgAdmin                                                                       5m 1s
+- [x] 3.2 O que é JPA e Hibernate?                                                                                17m 33s
 - [ ] 3.3 Adicionando JPA e configurando o Data Source                                                            14m 26s
 - [ ] 3.4 Mapeando entidades com JPA                                                                              11m 20s
 - [ ] 3.5 Criando as tabelas do banco a partir das entidades                                                      6m 50s
