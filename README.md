@@ -46,7 +46,7 @@
 - [x] 2.25 Criando e acessando propriedades customizadas com @Value                                               4m 18s
 - [x] 2.26 Acessando propriedades com @ConfigurationProperties                                                    7m 35s
 - [x] 2.27 Alterando a configuração do projeto dependendo do ambiente (com Spring Profiles)                       8m 50s
-- [ ] 2.28 Ativando o Spring Profile por linha de comando e variável de ambiente                                  3m 53s
+- [x] 2.28 Ativando o Spring Profile por linha de comando e variável de ambiente                                  3m 53s
 </pre>
 
 ##### 3. Introdução ao JPA e Hibernate
