@@ -34,7 +34,7 @@
 - [x] 2.13 Usando @Configuration e @Bean para definir beans                                                       15m 15s
 - [x] 2.14 Conhecendo os pontos de injeção e a anotação @Autowired                                                7m 55s
 - [x] 2.15 Dependência opcional com @Autowired                                                                    2m 52s
-- [ ] 2.16 Ambiguidade de beans e injeção de lista de beans                                                       5m 25s
+- [x] 2.16 Ambiguidade de beans e injeção de lista de beans                                                       5m 25s
 - [ ] 2.17 Desambiguação de beans com @Primary                                                                    2m 29s
 - [ ] 2.18 Desambiguação de beans com @Qualifier                                                                  5m 22s
 - [ ] 2.19 Desambiguação de beans com anotação customizada                                                        6m 30s
