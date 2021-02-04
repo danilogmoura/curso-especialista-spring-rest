@@ -43,8 +43,8 @@
 - [x] 2.22 Publicando e consumindo eventos customizados                                                           13m 30s
 - [x] 2.23 Configurando projetos Spring Boot com o application.properties                                         4m 28s
 - [x] 2.24 Substituindo propriedades via linha de comando e variáveis de ambiente                                 4m 17s
-- [ ] 2.25 Criando e acessando propriedades customizadas com @Value                                               4m 18s
-- [ ] 2.26 Acessando propriedades com @ConfigurationProperties                                                    7m 35s
+- [x] 2.25 Criando e acessando propriedades customizadas com @Value                                               4m 18s
+- [x] 2.26 Acessando propriedades com @ConfigurationProperties                                                    7m 35s
 - [ ] 2.27 Alterando a configuração do projeto dependendo do ambiente (com Spring Profiles)                       8m 50s
 - [ ] 2.28 Ativando o Spring Profile por linha de comando e variável de ambiente                                  3m 53s
 </pre>
