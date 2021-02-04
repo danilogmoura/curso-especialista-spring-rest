@@ -41,7 +41,7 @@
 - [x] 2.20 Mudando o comportamento da aplicação com Spring Profiles                                               11m 17s
 - [x] 2.21 Criando métodos de callback do ciclo de vida dos beans                                                 8m 39s
 - [x] 2.22 Publicando e consumindo eventos customizados                                                           13m 30s
-- [ ] 2.23 Configurando projetos Spring Boot com o application.properties                                         4m 28s
+- [x] 2.23 Configurando projetos Spring Boot com o application.properties                                         4m 28s
 - [ ] 2.24 Substituindo propriedades via linha de comando e variáveis de ambiente                                 4m 17s
 - [ ] 2.25 Criando e acessando propriedades customizadas com @Value                                               4m 18s
 - [ ] 2.26 Acessando propriedades com @ConfigurationProperties                                                    7m 35s
