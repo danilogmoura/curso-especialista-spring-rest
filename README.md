@@ -69,8 +69,8 @@
 - [x] 3.16 Desafio: Lombok e repositório de restaurantes                                                          2m 36s
 - [x] 3.17 Mapeando relacionamento com @ManyToOne                                                                 11m 47s
 - [x] 3.18 A anotação @JoinColumn                                                                                 2m 38s
-- [ ] 3.19 Propriedade nullable de @Column e @JoinColumn                                                          3m 2s
-- [ ] 3.20 Desafio: mapeando entidades                                                                            9m 34s
+- [x] 3.19 Propriedade nullable de @Column e @JoinColumn                                                          3m 2s
+- [x] 3.20 Desafio: mapeando entidades                                                                            9m 34s
 </pre>
 
 ##### 4. REST com Spring
