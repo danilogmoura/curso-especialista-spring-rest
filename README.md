@@ -77,7 +77,7 @@
 <pre>
 - [x] 4.1 O que é REST?                                                                                           4m 18s
 - [x] 4.2 Conhecendo as constraints do REST                                                                       6m 28s
-- [ ] 4.3 Diferença entre REST e RESTful                                                                          1m 43s
+- [x] 4.3 Diferença entre REST e RESTful                                                                          1m 43s
 - [ ] 4.4 Desenvolvedores de REST APIs puristas e pragmáticos                                                     2m 32s
 - [ ] 4.5 Conhecendo o protocolo HTTP                                                                             5m 21s
 - [ ] 4.6 Usando o protocolo HTTP                                                                                 13m 29s
