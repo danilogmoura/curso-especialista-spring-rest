@@ -60,8 +60,8 @@
 - [x] 3.7 Importando dados de teste com import.sql                                                                1m 57s
 - [x] 3.8 Consultando objetos do banco de dados                                                                   15m 41s
 - [x] 3.9 Adicionando um objeto no banco de dados                                                                 6m 53s
-- [ ] 3.10 Buscando um objeto pelo id no banco de dados                                                           2m 28s
-- [ ] 3.11 Atualizando um objeto no banco de dados                                                                3m 21s
+- [x] 3.10 Buscando um objeto pelo id no banco de dados                                                           2m 28s
+- [x] 3.11 Atualizando um objeto no banco de dados                                                                3m 21s
 - [ ] 3.12 Excluindo um objeto do banco de dados                                                                  5m 40s
 - [ ] 3.13 Conhecendo o padrão Aggregate do DDD                                                                   9m 13s
 - [ ] 3.14 Conhecendo e implementando o padrão Repository                                                         14m 31s
