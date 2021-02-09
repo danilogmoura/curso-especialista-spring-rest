@@ -65,8 +65,8 @@
 - [x] 3.12 Excluindo um objeto do banco de dados                                                                  5m 40s
 - [x] 3.13 Conhecendo o padrão Aggregate do DDD                                                                   9m 13s
 - [x] 3.14 Conhecendo e implementando o padrão Repository                                                         14m 31s
-- [ ] 3.15 Conhecendo e usando o Lombok                                                                           11m 29s
-- [ ] 3.16 Desafio: Lombok e repositório de restaurantes                                                          2m 36s
+- [x] 3.15 Conhecendo e usando o Lombok                                                                           11m 29s
+- [x] 3.16 Desafio: Lombok e repositório de restaurantes                                                          2m 36s
 - [ ] 3.17 Mapeando relacionamento com @ManyToOne                                                                 11m 47s
 - [ ] 3.18 A anotação @JoinColumn                                                                                 2m 38s
 - [ ] 3.19 Propriedade nullable de @Column e @JoinColumn                                                          3m 2s
