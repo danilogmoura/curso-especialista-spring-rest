@@ -63,7 +63,7 @@
 - [x] 3.10 Buscando um objeto pelo id no banco de dados                                                           2m 28s
 - [x] 3.11 Atualizando um objeto no banco de dados                                                                3m 21s
 - [x] 3.12 Excluindo um objeto do banco de dados                                                                  5m 40s
-- [ ] 3.13 Conhecendo o padrão Aggregate do DDD                                                                   9m 13s
+- [x] 3.13 Conhecendo o padrão Aggregate do DDD                                                                   9m 13s
 - [ ] 3.14 Conhecendo e implementando o padrão Repository                                                         14m 31s
 - [ ] 3.15 Conhecendo e usando o Lombok                                                                           11m 29s
 - [ ] 3.16 Desafio: Lombok e repositório de restaurantes                                                          2m 36s
