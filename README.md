@@ -54,7 +54,7 @@
 - [x] 3.1 Instalando o PostgreSQL e PgAdmin                                                                       5m 1s
 - [x] 3.2 O que é JPA e Hibernate?                                                                                17m 33s
 - [x] 3.3 Adicionando JPA e configurando o Data Source                                                            14m 26s
-- [ ] 3.4 Mapeando entidades com JPA                                                                              11m 20s
+- [x] 3.4 Mapeando entidades com JPA                                                                              11m 20s
 - [ ] 3.5 Criando as tabelas do banco a partir das entidades                                                      6m 50s
 - [ ] 3.6 Mapeando o id da entidade para autoincremento                                                           2m 51s
 - [ ] 3.7 Importando dados de teste com import.sql                                                                1m 57s
