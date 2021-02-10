@@ -43,9 +43,10 @@ Accept: text/html
 ```
 
 ```
-$ gnutls-cli www.uol.com.br
+$ gnutls-cli api.github.com
 
-GET /users/danilogmoura/repos
+GET /users/danilogmoura/repos HTTP/1.1
 Host: api.github.com
 Accept: application/json
+User-Agent: ERS
 ```

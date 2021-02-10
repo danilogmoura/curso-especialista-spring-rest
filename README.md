@@ -81,7 +81,7 @@
 - [x] 4.4 Desenvolvedores de REST APIs puristas e pragmáticos                                                     2m 32s
 - [x] 4.5 Conhecendo o protocolo HTTP                                                                             5m 21s
 - [x] 4.6 Usando o protocolo HTTP                                                                                 13m 29s
-- [ ] 4.7 Instalando e testando o Postman                                                                         7m 2s
+- [x] 4.7 Instalando e testando o Postman                                                                         7m 2s
 - [ ] 4.8 Entendendo o que são Recursos REST                                                                      1m 24s
 - [ ] 4.9 Identificando recursos REST                                                                             4m 33s
 - [ ] 4.10 Modelando e requisitando um Collection Resource com GET                                                12m 3s
