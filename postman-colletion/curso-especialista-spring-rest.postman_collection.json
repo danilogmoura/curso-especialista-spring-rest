@@ -6,43 +6,50 @@
 	},
 	"item": [
 		{
-			"name": "Github",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "api.github.com/users/danilogmoura/repos",
-					"host": [
-						"api",
-						"github",
-						"com"
-					],
-					"path": [
-						"users",
-						"danilogmoura",
-						"repos"
-					]
+			"name": "Cozinhas",
+			"item": [
+				{
+					"name": "localhost:8080/cozinhas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cozinhas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "localhost:8080/cozinhas",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/cozinhas",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"cozinhas"
-					]
+			"name": "Estados",
+			"item": [
+				{
+					"name": "localhost:8080/estados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/estados",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estados"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
