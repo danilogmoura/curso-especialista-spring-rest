@@ -88,40 +88,6 @@
 					"response": []
 				},
 				{
-					"name": "adicionar-xml",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/xml",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "<cozinha>\r\n    <nome>Japonesa</nome>\r\n</cozinha>",
-							"options": {
-								"raw": {
-									"language": "xml"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/cozinhas/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"cozinhas",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "atualizar",
 					"request": {
 						"method": "PUT",
@@ -289,40 +255,6 @@
 					"response": []
 				},
 				{
-					"name": "edit-adicionar-xml",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/xml",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "<cozinha>\r\n    <nome>Japonesa</nome>\r\n</cozinha>",
-							"options": {
-								"raw": {
-									"language": "xml"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/cozinhas/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"cozinhas",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "edit-atualizar",
 					"request": {
 						"method": "PUT",
@@ -336,7 +268,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Argentina\"\r\n}",
+							"raw": "    {\r\n        \"nome\": \"Teste Edição\",\r\n        \"taxaFrete\": 11,\r\n        \"cozinha\": {\r\n            \"id\": 2\r\n        }\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -344,13 +276,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/cozinhas/2",
+							"raw": "localhost:8080/restaurantes/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"cozinhas",
+								"restaurantes",
 								"2"
 							]
 						}

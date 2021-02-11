@@ -28,6 +28,7 @@ public class CadastroRestauranteService {
         return restauranteRepository.salvar(restaurante);
     }
 
+
     @Autowired
     public void setRestauranteRepository(RestauranteRepository restauranteRepository) {
         this.restauranteRepository = restauranteRepository;
