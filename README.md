@@ -104,7 +104,7 @@
 - [x] 4.27 Implementando a camada de domain services (e a importância da linguagem ubíqua)                        11m 3s
 - [x] 4.28 Refatorando a exclusão de cozinhas para usar domain services                                           16m 7s
 - [x] 4.29 Desafio: modelando e implementando a consulta de recursos de restaurantes                              3m 45s
-- [ ] 4.30 Modelando e implementando a inclusão de recursos de restaurantes                                       21m 56s
+- [x] 4.30 Modelando e implementando a inclusão de recursos de restaurantes                                       21m 56s
 - [ ] 4.31 Desafio: Modelando e implementando a atualização de recursos de restaurantes                           3m 0s
 - [ ] 4.32 Desafio: implementando serviços REST de cidades e estados                                              5m 28s
 - [ ] 4.33 Analisando solução para atualização parcial de recursos com PATCH                                      15m 47s
