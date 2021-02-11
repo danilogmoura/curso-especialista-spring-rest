@@ -91,9 +91,9 @@
 - [x] 4.14 Consultando Singleton Resource com GET e @PathVariable                                                 6m 48s
 - [x] 4.15 Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName               8m 54s
 - [x] 4.16 Customizando a representação em XML com Wrapper e anotações do Jackson                                 12m 13s
-- [ ] 4.17 Conhecendo os métodos HTTP                                                                             9m 7s
-- [ ] 4.18 Conhecendo os códigos de status HTTP                                                                   8m 14s
-- [ ] 4.19 Definindo o status da resposta HTTP com @ResponseStatus                                                1m 47s
+- [x] 4.17 Conhecendo os métodos HTTP                                                                             9m 7s
+- [x] 4.18 Conhecendo os códigos de status HTTP                                                                   8m 14s
+- [x] 4.19 Definindo o status da resposta HTTP com @ResponseStatus                                                1m 47s
 - [ ] 4.20 Manipulando a resposta HTTP com ResponseEntity                                                         10m 10s
 - [ ] 4.21 Corrigindo o Status HTTP para resource inexistente                                                     4m 46s
 - [ ] 4.22 Status HTTP para collection resource vazia: qual usar?                                                 3m 36s
