@@ -46,14 +46,14 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/cozinhas/1",
+							"raw": "localhost:8080/cozinhas/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"cozinhas",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -151,6 +151,32 @@
 							"path": [
 								"cozinhas",
 								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cozinhas/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								"3"
 							]
 						}
 					},
