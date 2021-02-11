@@ -16,7 +16,8 @@
 							{
 								"key": "Accept",
 								"value": "application/xml",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -90,7 +91,13 @@
 					"name": "adicionar-xml",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "<cozinha>\r\n    <nome>Japonesa</nome>\r\n</cozinha>",
@@ -109,6 +116,41 @@
 							"path": [
 								"cozinhas",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Argentina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cozinhas/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								"2"
 							]
 						}
 					},
