@@ -60,8 +60,18 @@ public class RestauranteController {
         try {
             restauranteAtual = cadastroRestaurante.salvar(restauranteAtual);
             return ResponseEntity.ok(restauranteAtual);
-        }catch (EntidadeNaoEncontradaException e) {
+        } catch (EntidadeNaoEncontradaException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Restaurante> remover(@PathVariable Long id) {
+        try {
+            cadastroRestaurante.remove(id);
+            return ResponseEntity.ok().build();
+        } catch (EntidadeNaoEncontradaException e) {
+            return ResponseEntity.notFound().build();
         }
     }
 

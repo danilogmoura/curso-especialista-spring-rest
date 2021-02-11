@@ -2,38 +2,38 @@ package com.algaworks.algafood.domain.service;
 
 import com.algaworks.algafood.domain.excption.EntidadeEmUsoException;
 import com.algaworks.algafood.domain.excption.EntidadeNaoEncontradaException;
-import com.algaworks.algafood.domain.model.Cozinha;
-import com.algaworks.algafood.domain.repository.CozinhaRepository;
+import com.algaworks.algafood.domain.model.Estado;
+import com.algaworks.algafood.domain.repository.EstadoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CadastroCozinhaService {
+public class CadastroEstadoService {
 
-    private CozinhaRepository cozinhaRepository;
+    private EstadoRepository estadoRepository;
 
-    public Cozinha salvar(Cozinha cozinha) {
-        return cozinhaRepository.salvar(cozinha);
+    public Estado cadastro(Estado estado) {
+        return estadoRepository.cadastrar(estado);
     }
 
-    public void excluir(Long cozinhaId) {
+    public void remover(Long id) {
         try {
-            cozinhaRepository.remover(cozinhaId);
+            estadoRepository.remover(id);
         } catch (EmptyResultDataAccessException e) {
             throw new EntidadeNaoEncontradaException(
-                    String.format("Não existe um cadastro de cozinha com código %d", cozinhaId)
+                    String.format("Não existe um cadastro de cozinha com código %d", id)
             );
         } catch (DataIntegrityViolationException e) {
             throw new EntidadeEmUsoException(
-                    String.format("Cozinha de código %d não pode ser removida, pois está em uso", cozinhaId)
+                    String.format("Estado de código %d não pode ser removido, pois está em uso", id)
             );
         }
     }
 
     @Autowired
-    public void setCozinhaRepository(CozinhaRepository cozinhaRepository) {
-        this.cozinhaRepository = cozinhaRepository;
+    public void setEstadoRepository(EstadoRepository estadoRepository) {
+        this.estadoRepository = estadoRepository;
     }
 }

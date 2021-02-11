@@ -106,7 +106,7 @@
 - [x] 4.29 Desafio: modelando e implementando a consulta de recursos de restaurantes                              3m 45s
 - [x] 4.30 Modelando e implementando a inclusão de recursos de restaurantes                                       21m 56s
 - [x] 4.31 Desafio: Modelando e implementando a atualização de recursos de restaurantes                           3m 0s
-- [ ] 4.32 Desafio: implementando serviços REST de cidades e estados                                              5m 28s
+- [x] 4.32 Desafio: implementando serviços REST de cidades e estados                                              5m 28s
 - [ ] 4.33 Analisando solução para atualização parcial de recursos com PATCH                                      15m 47s
 - [ ] 4.34 Finalizando a atualização parcial com a API de Reflections do Spring                                   18m 7s
 - [ ] 4.35 Introdução ao Modelo de Maturidade de Richardson (RMM)                                                 2m 37s
