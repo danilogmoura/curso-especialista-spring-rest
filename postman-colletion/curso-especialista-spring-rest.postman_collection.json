@@ -9,7 +9,7 @@
 			"name": "Cozinhas",
 			"item": [
 				{
-					"name": "localhost:8080/cozinhas",
+					"name": "listar",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -33,7 +33,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "bucar-por-id",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -57,7 +57,7 @@
 			"name": "Estados",
 			"item": [
 				{
-					"name": "localhost:8080/estados",
+					"name": "listar",
 					"request": {
 						"method": "GET",
 						"header": [],

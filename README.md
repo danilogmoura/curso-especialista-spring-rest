@@ -88,8 +88,8 @@
 - [x] 4.11 Desafio: collection resource de estados                                                                0m 38s
 - [x] 4.12 Representações de recursos e content negotiation                                                       3m 26s
 - [x] 4.13 Implementando content negotiation para retornar JSON ou XML                                            12m 5s
-- [ ] 4.14 Consultando Singleton Resource com GET e @PathVariable                                                 6m 48s
-- [ ] 4.15 Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName               8m 54s
+- [x] 4.14 Consultando Singleton Resource com GET e @PathVariable                                                 6m 48s
+- [x] 4.15 Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName               8m 54s
 - [ ] 4.16 Customizando a representação em XML com Wrapper e anotações do Jackson                                 12m 13s
 - [ ] 4.17 Conhecendo os métodos HTTP                                                                             9m 7s
 - [ ] 4.18 Conhecendo os códigos de status HTTP                                                                   8m 14s
