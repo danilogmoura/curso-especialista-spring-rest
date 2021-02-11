@@ -3,6 +3,7 @@ package com.algaworks.algafood.api.controller;
 import com.algaworks.algafood.api.model.CozinhasXmlWrapper;
 import com.algaworks.algafood.domain.model.Cozinha;
 import com.algaworks.algafood.domain.repository.CozinhaRepository;
+import com.algaworks.algafood.domain.service.CadastroCozinhaService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -18,6 +19,8 @@ import java.util.List;
 public class CozinhaController {
 
     private CozinhaRepository cozinhaRepository;
+
+    private CadastroCozinhaService cadastroCozinhaService;
 
     @GetMapping
     public List<Cozinha> listar() {
@@ -43,7 +46,7 @@ public class CozinhaController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Cozinha adicionar(@RequestBody Cozinha cozinha) {
-        return cozinhaRepository.salvar(cozinha);
+        return cadastroCozinhaService.salvar(cozinha);
     }
 
     @PutMapping("{cozinhaId}")
@@ -79,5 +82,10 @@ public class CozinhaController {
     @Autowired
     public void setCozinhaRepository(CozinhaRepository cozinhaRepository) {
         this.cozinhaRepository = cozinhaRepository;
+    }
+
+    @Autowired
+    public void setCadastroCozinhaService(CadastroCozinhaService cadastroCozinhaService) {
+        this.cadastroCozinhaService = cadastroCozinhaService;
     }
 }

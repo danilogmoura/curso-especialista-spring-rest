@@ -101,7 +101,7 @@
 - [x] 4.24 Negociando o media type do payload do POST com Content-Type                                            3m 55s
 - [x] 4.25 Modelando e implementando a atualização de recursos com PUT                                            13m 31s
 - [x] 4.26 Modelando e implementando a exclusão de recursos com DELETE                                            11m 1s
-- [ ] 4.27 Implementando a camada de domain services (e a importância da linguagem ubíqua)                        11m 3s
+- [x] 4.27 Implementando a camada de domain services (e a importância da linguagem ubíqua)                        11m 3s
 - [ ] 4.28 Refatorando a exclusão de cozinhas para usar domain services                                           16m 7s
 - [ ] 4.29 Desafio: modelando e implementando a consulta de recursos de restaurantes                              3m 45s
 - [ ] 4.30 Modelando e implementando a inclusão de recursos de restaurantes                                       21m 56s
