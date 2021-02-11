@@ -86,8 +86,8 @@
 - [x] 4.9 Identificando recursos REST                                                                             4m 33s
 - [x] 4.10 Modelando e requisitando um Collection Resource com GET                                                12m 3s
 - [x] 4.11 Desafio: collection resource de estados                                                                0m 38s
-- [ ] 4.12 Representações de recursos e content negotiation                                                       3m 26s
-- [ ] 4.13 Implementando content negotiation para retornar JSON ou XML                                            12m 5s
+- [x] 4.12 Representações de recursos e content negotiation                                                       3m 26s
+- [x] 4.13 Implementando content negotiation para retornar JSON ou XML                                            12m 5s
 - [ ] 4.14 Consultando Singleton Resource com GET e @PathVariable                                                 6m 48s
 - [ ] 4.15 Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName               8m 54s
 - [ ] 4.16 Customizando a representação em XML com Wrapper e anotações do Jackson                                 12m 13s
