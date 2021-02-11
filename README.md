@@ -94,7 +94,7 @@
 - [x] 4.17 Conhecendo os métodos HTTP                                                                             9m 7s
 - [x] 4.18 Conhecendo os códigos de status HTTP                                                                   8m 14s
 - [x] 4.19 Definindo o status da resposta HTTP com @ResponseStatus                                                1m 47s
-- [ ] 4.20 Manipulando a resposta HTTP com ResponseEntity                                                         10m 10s
+- [x] 4.20 Manipulando a resposta HTTP com ResponseEntity                                                         10m 10s
 - [ ] 4.21 Corrigindo o Status HTTP para resource inexistente                                                     4m 46s
 - [ ] 4.22 Status HTTP para collection resource vazia: qual usar?                                                 3m 36s
 - [ ] 4.23 Modelando e implementando a inclusão de recursos com POST                                              12m 7s
