@@ -90,7 +90,7 @@
 - [x] 4.13 Implementando content negotiation para retornar JSON ou XML                                            12m 5s
 - [x] 4.14 Consultando Singleton Resource com GET e @PathVariable                                                 6m 48s
 - [x] 4.15 Customizando as representações XML e JSON com @JsonIgnore, @JsonProperty e @JsonRootName               8m 54s
-- [ ] 4.16 Customizando a representação em XML com Wrapper e anotações do Jackson                                 12m 13s
+- [x] 4.16 Customizando a representação em XML com Wrapper e anotações do Jackson                                 12m 13s
 - [ ] 4.17 Conhecendo os métodos HTTP                                                                             9m 7s
 - [ ] 4.18 Conhecendo os códigos de status HTTP                                                                   8m 14s
 - [ ] 4.19 Definindo o status da resposta HTTP com @ResponseStatus                                                1m 47s
