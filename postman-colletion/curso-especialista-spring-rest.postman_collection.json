@@ -36,16 +36,79 @@
 					"name": "bucar-por-id",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
 						"url": {
-							"raw": "localhost:8080/cozinhas/3",
+							"raw": "localhost:8080/cozinhas/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"cozinhas",
-								"3"
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Brasileira\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cozinhas/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adicionar-xml",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<cozinha>\r\n    <nome>Japonesa</nome>\r\n</cozinha>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cozinhas/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								""
 							]
 						}
 					},

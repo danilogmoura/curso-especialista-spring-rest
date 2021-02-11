@@ -98,7 +98,7 @@
 - [x] 4.21 Corrigindo o Status HTTP para resource inexistente                                                     4m 46s
 - [x] 4.22 Status HTTP para collection resource vazia: qual usar?                                                 3m 36s
 - [x] 4.23 Modelando e implementando a inclusão de recursos com POST                                              12m 7s
-- [ ] 4.24 Negociando o media type do payload do POST com Content-Type                                            3m 55s
+- [x] 4.24 Negociando o media type do payload do POST com Content-Type                                            3m 55s
 - [ ] 4.25 Modelando e implementando a atualização de recursos com PUT                                            13m 31s
 - [ ] 4.26 Modelando e implementando a exclusão de recursos com DELETE                                            11m 1s
 - [ ] 4.27 Implementando a camada de domain services (e a importância da linguagem ubíqua)                        11m 3s
