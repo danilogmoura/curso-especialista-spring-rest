@@ -110,7 +110,7 @@
 - [x] 4.33 Analisando solução para atualização parcial de recursos com PATCH                                      15m 47s
 - [x] 4.34 Finalizando a atualização parcial com a API de Reflections do Spring                                   18m 7s
 - [x] 4.35 Introdução ao Modelo de Maturidade de Richardson (RMM)                                                 2m 37s
-- [ ] 4.36 Conhecendo o nível 0 do RMM                                                                            3m 46s
+- [x] 4.36 Conhecendo o nível 0 do RMM                                                                            3m 46s
 - [ ] 4.37 Conhecendo o nível 1 do RMM                                                                            1m 43s
 - [ ] 4.38 Conhecendo o nível 2 do RMM                                                                            2m 43s
 - [ ] 4.39 Conhecendo o nível 3 do RMM                                                                            9m 34s
