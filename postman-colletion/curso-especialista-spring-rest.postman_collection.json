@@ -6,12 +6,39 @@
 	},
 	"item": [
 		{
-			"name": "cozinhas",
+			"name": "cidades",
 			"item": [
 				{
-					"name": "listar",
+					"name": "adicionar",
 					"request": {
-						"method": "GET",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Campinas\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cidades",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
@@ -20,14 +47,24 @@
 								"disabled": true
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Salvador\",\r\n    \"estado\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "localhost:8080/cozinhas",
+							"raw": "localhost:8080/cidades/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"cozinhas"
+								"cidades",
+								"2"
 							]
 						}
 					},
@@ -46,19 +83,75 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/cozinhas/2",
+							"raw": "localhost:8080/cidades/3",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"cozinhas",
-								"2"
+								"cidades",
+								"3"
 							]
 						}
 					},
 					"response": []
 				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cidades",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cidades/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cozinhas",
+			"item": [
 				{
 					"name": "adicionar",
 					"request": {
@@ -123,6 +216,57 @@
 					"response": []
 				},
 				{
+					"name": "bucar-por-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cozinhas/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cozinhas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cozinhas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "remover",
 					"request": {
 						"method": "DELETE",
@@ -154,10 +298,19 @@
 			"name": "estados",
 			"item": [
 				{
-					"name": "listar",
+					"name": "adicionar",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste do Adicionar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost:8080/estados",
 							"host": [
@@ -170,12 +323,68 @@
 						}
 					},
 					"response": []
-				}
-			]
-		},
-		{
-			"name": "restaurantes",
-			"item": [
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste do Dan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/estados/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estados",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bucar-por-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/estados/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estados",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
 				{
 					"name": "listar",
 					"request": {
@@ -189,6 +398,64 @@
 							}
 						],
 						"url": {
+							"raw": "localhost:8080/estados",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/estados/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estados",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "restaurantes",
+			"item": [
+				{
+					"name": "adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Comida Mineira\",\r\n    \"taxaFrete\": 12,\r\n    \"cozinha\": {\r\n        \"id\": 10\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
 							"raw": "localhost:8080/restaurantes",
 							"host": [
 								"localhost"
@@ -196,6 +463,76 @@
 							"port": "8080",
 							"path": [
 								"restaurantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste Edição\",\r\n    \"taxaFrete\": 11,\r\n    \"cozinha\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/restaurantes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar-parcial",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste Edição\",\r\n    \"taxaFrete\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/restaurantes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restaurantes",
+								"2"
 							]
 						}
 					},
@@ -228,19 +565,17 @@
 					"response": []
 				},
 				{
-					"name": "adicionar",
+					"name": "listar",
 					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Comida Mineira\",\r\n    \"taxaFrete\": 12,\r\n    \"cozinha\": {\r\n        \"id\": 10\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
 							}
-						},
+						],
 						"url": {
 							"raw": "localhost:8080/restaurantes",
 							"host": [
@@ -255,42 +590,7 @@
 					"response": []
 				},
 				{
-					"name": "edit-atualizar",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/xml",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "    {\r\n        \"nome\": \"Teste Edição\",\r\n        \"taxaFrete\": 11,\r\n        \"cozinha\": {\r\n            \"id\": 2\r\n        }\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/restaurantes/2",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"restaurantes",
-								"2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "edit-remover",
+					"name": "remover",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -302,13 +602,13 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/cozinhas/3",
+							"raw": "localhost:8080/restaurantes/3",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"cozinhas",
+								"restaurantes",
 								"3"
 							]
 						}
