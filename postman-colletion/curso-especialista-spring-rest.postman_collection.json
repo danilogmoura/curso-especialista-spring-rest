@@ -517,7 +517,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Teste Edição\",\r\n    \"taxaFrete\": null\r\n}",
+							"raw": "{\r\n    \"nome\": \"Teste Edição Parcial\",\r\n    \"cozinha\": {\r\n        \"id\": 2\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
