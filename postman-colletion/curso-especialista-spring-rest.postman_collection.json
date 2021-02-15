@@ -769,7 +769,7 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/teste/restaurantes/por-nome-cozinhaid?nome=Thai De&cozinhaId=1",
+							"raw": "localhost:8080/teste/restaurantes/por-nome-cozinhaid?nome=T&cozinhaId=1",
 							"host": [
 								"localhost"
 							],
@@ -782,7 +782,7 @@
 							"query": [
 								{
 									"key": "nome",
-									"value": "Thai De"
+									"value": "T"
 								},
 								{
 									"key": "cozinhaId",
@@ -886,6 +886,90 @@
 								{
 									"key": "cozinhaId",
 									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-por-nome-e-frete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/restaurantes/por-nome-e-frete?nome=T&taxaFreteInicial=10&taxaFreteFinal=20",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"por-nome-e-frete"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "T"
+								},
+								{
+									"key": "taxaFreteInicial",
+									"value": "10"
+								},
+								{
+									"key": "taxaFreteFinal",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-com-frete-gratis",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/restaurantes/com-frete-gratis?nome=T",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"com-frete-gratis"
+							],
+							"query": [
+								{
+									"key": "taxaFreteInicial",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "taxaFreteFinal",
+									"value": "20",
+									"disabled": true
+								},
+								{
+									"key": "nome",
+									"value": "T"
 								}
 							]
 						}
