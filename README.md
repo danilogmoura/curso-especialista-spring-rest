@@ -137,7 +137,7 @@
 - [x] 5.17 Implementando Specifications com SDJ                                                                   8m 59s
 - [x] 5.18 Criando uma fábrica de Specifications                                                                  7m 14s
 - [x] 5.19 Injetando o próprio repositório na implementação customizada e a anotação @Lazy                        8m 54s
-- [ ] 5.20 Estendendo o JpaRepository para customizar o repositório base                                          15m 51s
+- [x] 5.20 Estendendo o JpaRepository para customizar o repositório base                                          15m 51s
 </pre>
 
 ##### 6. Explorando mais do JPA e Hibernate

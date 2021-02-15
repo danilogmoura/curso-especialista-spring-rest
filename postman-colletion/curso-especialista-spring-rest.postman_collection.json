@@ -687,6 +687,39 @@
 					"response": []
 				},
 				{
+					"name": "cozinhas-bucar-primeira",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/cozinhas/unico-por-nome?nome=Tailandesa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"cozinhas",
+								"unico-por-nome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Tailandesa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "cozinhas-exists",
 					"request": {
 						"method": "GET",
@@ -971,6 +1004,33 @@
 									"key": "nome",
 									"value": "T"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-buscar-primeiro",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/restaurantes/primeiro",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"primeiro"
 							]
 						}
 					},
