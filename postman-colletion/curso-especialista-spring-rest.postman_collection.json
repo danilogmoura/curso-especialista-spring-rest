@@ -134,14 +134,14 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/cidades/1",
+							"raw": "localhost:8080/cidades/10",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"cidades",
-								"1"
+								"10"
 							]
 						}
 					},
@@ -236,39 +236,6 @@
 							"path": [
 								"cozinhas",
 								"2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "bucar-por-nome",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/xml",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "localhost:8080/teste/cozinhas/por-nome?nome=de",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"teste",
-								"cozinhas",
-								"por-nome"
-							],
-							"query": [
-								{
-									"key": "nome",
-									"value": "de"
-								}
 							]
 						}
 					},
@@ -456,14 +423,14 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/estados/1",
+							"raw": "localhost:8080/estados/4",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"estados",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -481,7 +448,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Comida Mineira\",\r\n    \"taxaFrete\": 12,\r\n    \"cozinha\": {\r\n        \"id\": 10\r\n    }\r\n}",
+							"raw": "{\r\n    \"nome\": \"Comida Mineira\",\r\n    \"taxaFrete\": 12,\r\n    \"cozinha\": {\r\n        \"id\": 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -643,6 +610,77 @@
 							"path": [
 								"restaurantes",
 								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "teste-controller",
+			"item": [
+				{
+					"name": "bucar-todas-por-nome",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/cozinhas/por-nome?nome=Tailandesa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"cozinhas",
+								"por-nome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Tailandesa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bucar-por-nome",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/cozinhas/unico-por-nome?nome=Tailandesa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"cozinhas",
+								"unico-por-nome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Tailandesa"
+								}
 							]
 						}
 					},
