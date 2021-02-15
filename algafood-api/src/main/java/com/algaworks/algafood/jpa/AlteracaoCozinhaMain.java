@@ -20,7 +20,7 @@ public class AlteracaoCozinhaMain {
         cozinha.setId(1L);
         cozinha.setNome("Brasileira");
 
-        cozinha = cozinhas.salvar(cozinha);
+        cozinha = cozinhas.save(cozinha);
 
         System.out.println(cozinha);
     }
