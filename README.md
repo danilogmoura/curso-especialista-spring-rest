@@ -132,7 +132,7 @@
 - [x] 5.12 Implementando uma consulta dinâmica com JPQL                                                           12m 3s
 - [x] 5.13 Implementando uma consulta simples com Criteria API                                                    9m 9s
 - [x] 5.14 Adicionando restrições na cláusula where com Criteria API                                              7m 8s
-- [ ] 5.15 Tornando a consulta com Criteria API com filtros dinâmicos                                             6m 4s
+- [x] 5.15 Tornando a consulta com Criteria API com filtros dinâmicos                                             6m 4s
 - [ ] 5.16 Conhecendo o uso do padrão Specifications (DDD) com SDJ                                                7m 54s
 - [ ] 5.17 Implementando Specifications com SDJ                                                                   8m 59s
 - [ ] 5.18 Criando uma fábrica de Specifications                                                                  7m 14s
