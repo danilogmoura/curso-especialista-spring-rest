@@ -621,7 +621,7 @@
 			"name": "teste-controller",
 			"item": [
 				{
-					"name": "bucar-todas-por-nome",
+					"name": "cozinhas-bucar-todas-por-nome",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -654,7 +654,7 @@
 					"response": []
 				},
 				{
-					"name": "bucar-por-nome",
+					"name": "cozinhas-bucar-por-nome",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -680,6 +680,76 @@
 								{
 									"key": "nome",
 									"value": "Tailandesa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-por-taxa-frete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/cozinhas/unico-por-nome?nome=Tailandesa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"cozinhas",
+								"unico-por-nome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Tailandesa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-por-nome-cozinhaid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/restaurantes/por-nome-cozinhaid?nome=Thai De&cozinhaId=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"por-nome-cozinhaid"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Thai De"
+								},
+								{
+									"key": "cozinhaId",
+									"value": "1"
 								}
 							]
 						}
