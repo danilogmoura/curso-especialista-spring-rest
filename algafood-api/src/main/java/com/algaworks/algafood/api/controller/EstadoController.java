@@ -12,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/estados")
@@ -42,15 +41,15 @@ public class EstadoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Estado> alterar(@PathVariable Long id, @RequestBody Estado estado) {
-        Optional<Estado> estadoAtual = estadoRepository.findById(id);
+        Estado estadoAtual = estadoRepository.findById(id).orElse(null);
 
-        if (estadoAtual.isEmpty()) {
+        if (estadoAtual == null) {
             return ResponseEntity.notFound().build();
         }
 
-        BeanUtils.copyProperties(estado, estadoAtual.get(), "id");
-        Estado estadoSalvo = cadastroEstado.cadastro(estadoAtual.get());
-        return ResponseEntity.ok(estadoSalvo);
+        BeanUtils.copyProperties(estado, estadoAtual, "id");
+        estadoAtual = cadastroEstado.cadastro(estadoAtual);
+        return ResponseEntity.ok(estadoAtual);
     }
 
     @DeleteMapping("/{id}")

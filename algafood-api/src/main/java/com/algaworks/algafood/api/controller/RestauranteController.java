@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/restaurantes")
@@ -50,16 +49,16 @@ public class RestauranteController {
 
     @PutMapping("/{id}")
     public ResponseEntity<?> atualizar(@PathVariable Long id, @RequestBody Restaurante restaurante) {
-        Optional<Restaurante> restauranteAtual = restauranteRepository.findById(id);
+        Restaurante restauranteAtual = restauranteRepository.findById(id).orElse(null);
 
-        if (restauranteAtual.isEmpty()) {
+        if (restauranteAtual == null) {
             return ResponseEntity.notFound().build();
         }
 
         try {
-            BeanUtils.copyProperties(restaurante, restauranteAtual.get(), "id");
-            Restaurante restauranteSalvo = cadastroRestaurante.salvar(restauranteAtual.get());
-            return ResponseEntity.ok(restauranteSalvo);
+            BeanUtils.copyProperties(restaurante, restauranteAtual, "id");
+            restauranteAtual = cadastroRestaurante.salvar(restauranteAtual);
+            return ResponseEntity.ok(restauranteAtual);
         } catch (EntidadeNaoEncontradaException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
@@ -77,14 +76,14 @@ public class RestauranteController {
 
     @PatchMapping("/{id}")
     public ResponseEntity<?> atualizarParcial(@PathVariable Long id, @RequestBody Map<String, Object> campos) {
-        Optional<Restaurante> restauranteDestino = restauranteRepository.findById(id);
+        Restaurante restauranteDestino = restauranteRepository.findById(id).orElse(null);
 
-        if (restauranteDestino.isEmpty()) {
+        if (restauranteDestino == null) {
             return ResponseEntity.notFound().build();
         }
 
-        merge(campos, restauranteDestino.get());
-        return atualizar(id, restauranteDestino.get());
+        merge(campos, restauranteDestino);
+        return atualizar(id, restauranteDestino);
     }
 
     private void merge(Map<String, Object> dadosOrigem, Restaurante restauranteDestino) {
