@@ -242,6 +242,39 @@
 					"response": []
 				},
 				{
+					"name": "bucar-por-nome",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/cozinhas/por-nome?nome=de",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"cozinhas",
+								"por-nome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "de"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "listar",
 					"request": {
 						"method": "GET",

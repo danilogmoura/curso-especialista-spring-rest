@@ -118,7 +118,7 @@
 
 ##### 5. Super poderes do Spring Data JPA
 <pre>
-- [ ] 5.1 Implementando consultas JPQL em repositórios                                                            11m 39s
+- [x] 5.1 Implementando consultas JPQL em repositórios                                                            11m 39s
 - [ ] 5.2 Conhecendo o projeto Spring Data JPA (SDJ)                                                              3m 4s
 - [ ] 5.3 Criando um repositório com Spring Data JPA (SDJ)                                                        10m 12s
 - [ ] 5.4 Refatorando o código do projeto para usar o repositório do SDJ                                          10m 45s
