@@ -687,6 +687,39 @@
 					"response": []
 				},
 				{
+					"name": "cozinhas-exists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/cozinhas/exists?nome=Tailandesa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"cozinhas",
+								"exists"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Tailandesa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "restaurantes-por-taxa-frete",
 					"request": {
 						"method": "GET",
@@ -699,20 +732,24 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/teste/cozinhas/unico-por-nome?nome=Tailandesa",
+							"raw": "localhost:8080/teste/restaurantes/por-taxa-frete?taxaInicial=9&taxaFinal=10",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"teste",
-								"cozinhas",
-								"unico-por-nome"
+								"restaurantes",
+								"por-taxa-frete"
 							],
 							"query": [
 								{
-									"key": "nome",
-									"value": "Tailandesa"
+									"key": "taxaInicial",
+									"value": "9"
+								},
+								{
+									"key": "taxaFinal",
+									"value": "10"
 								}
 							]
 						}
@@ -747,6 +784,105 @@
 									"key": "nome",
 									"value": "Thai De"
 								},
+								{
+									"key": "cozinhaId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-primeiro-por-nome",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/restaurantes/primeiro-por-nome?nome=Thai",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"primeiro-por-nome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Thai"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-top2-por-nome",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/restaurantes/top2-por-nome?nome=a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"top2-por-nome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restaurantes-count-por-cozinhaId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/teste/restaurantes/count-por-cozinhaId?cozinhaId=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teste",
+								"restaurantes",
+								"count-por-cozinhaId"
+							],
+							"query": [
 								{
 									"key": "cozinhaId",
 									"value": "1"

@@ -125,7 +125,7 @@
 - [x] 5.5 Desafio: refatorando todos os repositórios para usar SDJ                                                1m 45s
 - [x] 5.6 Criando consultas com query methods                                                                     10m 26s
 - [x] 5.7 Usando as keywords para definir critérios de query methods                                              11m 54s
-- [ ] 5.8 Conhecendo os prefixos de query methods                                                                 12m 0s
+- [x] 5.8 Conhecendo os prefixos de query methods                                                                 12m 0s
 - [ ] 5.9 Usando queries JPQL customizadas com @Query                                                             5m 7s
 - [ ] 5.10 Externalizando consultas JPQL para um arquivo XML                                                      5m 59s
 - [ ] 5.11 Implementando um repositório SDJ customizado                                                           16m 24s
