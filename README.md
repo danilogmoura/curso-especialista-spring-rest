@@ -122,7 +122,7 @@
 - [x] 5.2 Conhecendo o projeto Spring Data JPA (SDJ)                                                              3m 4s
 - [x] 5.3 Criando um repositório com Spring Data JPA (SDJ)                                                        10m 12s
 - [x] 5.4 Refatorando o código do projeto para usar o repositório do SDJ                                          10m 45s
-- [ ] 5.5 Desafio: refatorando todos os repositórios para usar SDJ                                                1m 45s
+- [x] 5.5 Desafio: refatorando todos os repositórios para usar SDJ                                                1m 45s
 - [ ] 5.6 Criando consultas com query methods                                                                     10m 26s
 - [ ] 5.7 Usando as keywords para definir critérios de query methods                                              11m 54s
 - [ ] 5.8 Conhecendo os prefixos de query methods                                                                 12m 0s

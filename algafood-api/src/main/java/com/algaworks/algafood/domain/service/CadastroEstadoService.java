@@ -15,12 +15,12 @@ public class CadastroEstadoService {
     private EstadoRepository estadoRepository;
 
     public Estado cadastro(Estado estado) {
-        return estadoRepository.cadastrar(estado);
+        return estadoRepository.save(estado);
     }
 
     public void remover(Long id) {
         try {
-            estadoRepository.remover(id);
+            estadoRepository.deleteById(id);
         } catch (EmptyResultDataAccessException e) {
             throw new EntidadeNaoEncontradaException(
                     String.format("Não existe um cadastro de cozinha com código %d", id)
