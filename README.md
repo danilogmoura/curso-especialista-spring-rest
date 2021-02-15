@@ -127,7 +127,7 @@
 - [x] 5.7 Usando as keywords para definir critérios de query methods                                              11m 54s
 - [x] 5.8 Conhecendo os prefixos de query methods                                                                 12m 0s
 - [x] 5.9 Usando queries JPQL customizadas com @Query                                                             5m 7s
-- [ ] 5.10 Externalizando consultas JPQL para um arquivo XML                                                      5m 59s
+- [x] 5.10 Externalizando consultas JPQL para um arquivo XML                                                      5m 59s
 - [ ] 5.11 Implementando um repositório SDJ customizado                                                           16m 24s
 - [ ] 5.12 Implementando uma consulta dinâmica com JPQL                                                           12m 3s
 - [ ] 5.13 Implementando uma consulta simples com Criteria API                                                    9m 9s
