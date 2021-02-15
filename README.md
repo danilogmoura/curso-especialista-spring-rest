@@ -134,7 +134,7 @@
 - [x] 5.14 Adicionando restrições na cláusula where com Criteria API                                              7m 8s
 - [x] 5.15 Tornando a consulta com Criteria API com filtros dinâmicos                                             6m 4s
 - [x] 5.16 Conhecendo o uso do padrão Specifications (DDD) com SDJ                                                7m 54s
-- [ ] 5.17 Implementando Specifications com SDJ                                                                   8m 59s
+- [x] 5.17 Implementando Specifications com SDJ                                                                   8m 59s
 - [ ] 5.18 Criando uma fábrica de Specifications                                                                  7m 14s
 - [ ] 5.19 Injetando o próprio repositório na implementação customizada e a anotação @Lazy                        8m 54s
 - [ ] 5.20 Estendendo o JpaRepository para customizar o repositório base                                          15m 51s
