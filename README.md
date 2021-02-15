@@ -129,7 +129,7 @@
 - [x] 5.9 Usando queries JPQL customizadas com @Query                                                             5m 7s
 - [x] 5.10 Externalizando consultas JPQL para um arquivo XML                                                      5m 59s
 - [X] 5.11 Implementando um repositório SDJ customizado                                                           16m 24s
-- [ ] 5.12 Implementando uma consulta dinâmica com JPQL                                                           12m 3s
+- [x] 5.12 Implementando uma consulta dinâmica com JPQL                                                           12m 3s
 - [ ] 5.13 Implementando uma consulta simples com Criteria API                                                    9m 9s
 - [ ] 5.14 Adicionando restrições na cláusula where com Criteria API                                              7m 8s
 - [ ] 5.15 Tornando a consulta com Criteria API com filtros dinâmicos                                             6m 4s
