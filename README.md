@@ -144,7 +144,7 @@
 <pre>
 - [x] 6.1 Mapeando relacionamento bidirecional com @OneToMany                                                     19m 14s
 - [x] 6.2 Mapeando relacionamento muitos-para-muitos com @ManyToMany                                              11m 27s
-- [ ] 6.3 Analisando o impacto do relacionamento muitos-para-muitos na REST API                                   11m 21s
+- [x] 6.3 Analisando o impacto do relacionamento muitos-para-muitos na REST API                                   11m 21s
 - [ ] 6.4 Mapeando classes incorporáveis com @Embedded e @Embeddable                                              8m 17s
 - [ ] 6.5 Testando e analisando o impacto da incorporação de classe na REST API                                   8m 20s
 - [ ] 6.6 Mapeando propriedades com @CreationTimestamp e @UpdateTimestamp                                         15m 7s
