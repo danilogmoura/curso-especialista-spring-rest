@@ -149,7 +149,7 @@
 - [x] 6.6 Mapeando propriedades com @CreationTimestamp e @UpdateTimestamp                                         15m 7s
 - [x] 6.7 Desafio: mapeando relacionamento muitos-para-um                                                         1m 35s
 - [x] 6.8 Desafio: mapeando relacionamento um-para-muitos                                                         1m 30s
-- [ ] 6.9 Desafio: mapeando relacionamentos muitos-para-muitos                                                    5m 36s
+- [x] 6.9 Desafio: mapeando relacionamentos muitos-para-muitos                                                    5m 36s
 - [ ] 6.10 Entendendo o Eager Loading                                                                             18m 58s
 - [ ] 6.11 Entendendo o Lazy Loading                                                                              13m 16s
 - [ ] 6.12 Alterando a estratégia de fetching para Lazy Loading                                                   16m 39s
