@@ -20,9 +20,9 @@ insert into cozinha (id, nome) values (2, 'Indiana');
 SELECT setval('cozinha_id_seq', 2, true);
 
 
-insert into restaurante (id, nome, taxa_frete, cozinha_id, endereco_cidade_id, endereco_cep, endereco_logradouro, endereco_numero, endereco_bairro) values (1, 'Thai Gourmet', 10, 1, 1, '38400-999', 'Rua João Pinheiro', '1000', 'Centro');
-insert into restaurante (id, nome, taxa_frete, cozinha_id) values (2, 'Thai Delivery', 9.50, 1);
-insert into restaurante (id, nome, taxa_frete, cozinha_id) values (3, 'Tuk Tuk Comida Indiana', 15, 2);
+insert into restaurante (id, nome, taxa_frete, cozinha_id, data_cadastro, data_atualizacao, endereco_cidade_id, endereco_cep, endereco_logradouro, endereco_numero, endereco_bairro) values (1, 'Thai Gourmet', 10, 1, now() at time zone 'utc', now() at time zone 'utc', 1, '38400-999', 'Rua João Pinheiro', '1000', 'Centro');
+insert into restaurante (id, nome, taxa_frete, cozinha_id, data_cadastro, data_atualizacao) values (2, 'Thai Delivery', 9.50, 1, now() at time zone 'utc', now() at time zone 'utc');
+insert into restaurante (id, nome, taxa_frete, cozinha_id, data_cadastro, data_atualizacao) values (3, 'Tuk Tuk Comida Indiana', 15, 2, now() at time zone 'utc', now() at time zone 'utc');
 
 SELECT setval('restaurante_id_seq', 3, true);
 

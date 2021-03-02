@@ -2,7 +2,6 @@
 
 - Trainamento oferecido pela empresa [AlgaWorks](https://cafe.algaworks.com/).
 
-- **Início:** 2021-02-02
 - **Termino:** Em progresso
 
 ## Conteúdo programático
@@ -147,7 +146,7 @@
 - [x] 6.3 Analisando o impacto do relacionamento muitos-para-muitos na REST API                                   11m 21s
 - [x] 6.4 Mapeando classes incorporáveis com @Embedded e @Embeddable                                              8m 17s
 - [x] 6.5 Testando e analisando o impacto da incorporação de classe na REST API                                   8m 20s
-- [ ] 6.6 Mapeando propriedades com @CreationTimestamp e @UpdateTimestamp                                         15m 7s
+- [x] 6.6 Mapeando propriedades com @CreationTimestamp e @UpdateTimestamp                                         15m 7s
 - [ ] 6.7 Desafio: mapeando relacionamento muitos-para-um                                                         1m 35s
 - [ ] 6.8 Desafio: mapeando relacionamento um-para-muitos                                                         1m 30s
 - [ ] 6.9 Desafio: mapeando relacionamentos muitos-para-muitos                                                    5m 36s

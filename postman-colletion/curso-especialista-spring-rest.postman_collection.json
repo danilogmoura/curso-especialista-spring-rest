@@ -482,7 +482,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Teste Edição\",\r\n    \"taxaFrete\": 11,\r\n    \"cozinha\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"raw": "{\r\n    \"nome\": \"Teste Edição\",\r\n    \"taxaFrete\": 10,\r\n    \"cozinha\": {\r\n        \"id\": 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -490,14 +490,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/restaurantes/2",
+							"raw": "localhost:8080/restaurantes/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"restaurantes",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -551,14 +551,14 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/restaurantes/3",
+							"raw": "localhost:8080/restaurantes/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"restaurantes",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -699,7 +699,7 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/teste/cozinhas/unico-por-nome?nome=Tailandesa",
+							"raw": "localhost:8080/teste/cozinhas/primeira-cozinha",
 							"host": [
 								"localhost"
 							],
@@ -707,13 +707,7 @@
 							"path": [
 								"teste",
 								"cozinhas",
-								"unico-por-nome"
-							],
-							"query": [
-								{
-									"key": "nome",
-									"value": "Tailandesa"
-								}
+								"primeira-cozinha"
 							]
 						}
 					},
