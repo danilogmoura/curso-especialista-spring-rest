@@ -150,9 +150,9 @@
 - [x] 6.7 Desafio: mapeando relacionamento muitos-para-um                                                         1m 35s
 - [x] 6.8 Desafio: mapeando relacionamento um-para-muitos                                                         1m 30s
 - [x] 6.9 Desafio: mapeando relacionamentos muitos-para-muitos                                                    5m 36s
-- [ ] 6.10 Entendendo o Eager Loading                                                                             18m 58s
-- [ ] 6.11 Entendendo o Lazy Loading                                                                              13m 16s
-- [ ] 6.12 Alterando a estratégia de fetching para Lazy Loading                                                   16m 39s
+- [x] 6.10 Entendendo o Eager Loading                                                                             18m 58s
+- [x] 6.11 Entendendo o Lazy Loading                                                                              13m 16s
+- [x] 6.12 Alterando a estratégia de fetching para Lazy Loading                                                   16m 39s
 - [ ] 6.13 Alterando a estratégia de fetching para Eager Loading                                                  2m 31s
 - [ ] 6.14 Resolvendo o Problema do N+1 com fetch join na JPQL                                                    7m 52s
 </pre>
