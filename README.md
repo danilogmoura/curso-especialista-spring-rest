@@ -169,7 +169,7 @@
 - [x] 7.8 Criando migrações complexas com remanejamento de dados                                                  20m 13s
 - [x] 7.9 Criando migração a partir de DDL gerado por schema generation                                           8m 44s
 - [x] 7.10 Adicionando dados de testes com callback do Flyway                                                     20m 38s
-- [ ] 7.11 Reparando migrações com erros                                                                          12m 15s
+- [x] 7.11 Reparando migrações com erros                                                                          12m 15s
 - [ ] 7.12 Desafio: Criando migrações e mapeando as entidades Pedido e ItemPedido                                 5m 20s
 </pre>
 
