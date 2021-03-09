@@ -165,9 +165,9 @@
 - [x] 7.4 Schema generation em produção não é uma boa prática                                                     10m 1s
 - [x] 7.5 Flyway: ferramenta de versionamento de schemas de banco de dados                                        20m 39s
 - [x] 7.6 Adicionando o Flyway no projeto e criando a primeira migração                                           19m 6s
-- [ ] 7.7 Evoluindo o banco de dados com novas migrações                                                          14m 19s
-- [ ] 7.8 Criando migrações complexas com remanejamento de dados                                                  20m 13s
-- [ ] 7.9 Criando migração a partir de DDL gerado por schema generation                                           8m 44s
+- [x] 7.7 Evoluindo o banco de dados com novas migrações                                                          14m 19s
+- [x] 7.8 Criando migrações complexas com remanejamento de dados                                                  20m 13s
+- [x] 7.9 Criando migração a partir de DDL gerado por schema generation                                           8m 44s
 - [ ] 7.10 Adicionando dados de testes com callback do Flyway                                                     20m 38s
 - [ ] 7.11 Reparando migrações com erros                                                                          12m 15s
 - [ ] 7.12 Desafio: Criando migrações e mapeando as entidades Pedido e ItemPedido                                 5m 20s
