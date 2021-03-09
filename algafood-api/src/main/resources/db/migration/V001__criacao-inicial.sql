@@ -1,6 +1,6 @@
 create table cozinha
 (
     id   bigserial   not null
-        constraint cozinha_pk primary key,
+        constraint pk_cozinha primary key,
     nome varchar(60) not null
 );
