@@ -1,7 +1,6 @@
 create table estado
 (
-    id   bigserial   not null
-        constraint pk_estado primary key,
+    id   bigserial primary key,
     nome varchar(80) not null
 );
 
@@ -13,4 +12,4 @@ alter table cidade
     drop column nome_estado;
 
 alter table cidade
-    rename column nome_cidade to cidade;
+    rename column nome_cidade to nome;
