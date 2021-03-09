@@ -1,7 +1,6 @@
 package com.algaworks.algafood.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
@@ -39,9 +38,8 @@ public class Restaurante {
     @Column(nullable = false)
     private LocalDateTime dataAtualizacao;
 
-    //    @JsonIgnoreProperties({"hibernateLazyInitializer"})
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
+    //    @JsonIgnore
+    @ManyToOne //(fetch = FetchType.LAZY)
     @JoinColumn(name = "cozinha_id", nullable = false)
     private Cozinha cozinha;
 
@@ -49,8 +47,8 @@ public class Restaurante {
     @Embedded
     private Endereco endereco;
 
-    @JsonIgnore
-    @ManyToMany(fetch = FetchType.EAGER)
+//    @JsonIgnore
+    @ManyToMany //(fetch = FetchType.EAGER)
     @JoinTable(name = "restaurante_forma_pagamento",
             joinColumns = @JoinColumn(name = "restaurante_id"),
             inverseJoinColumns = @JoinColumn(name = "forma_pagamento_id"))

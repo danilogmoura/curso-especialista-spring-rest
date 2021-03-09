@@ -154,7 +154,7 @@
 - [x] 6.11 Entendendo o Lazy Loading                                                                              13m 16s
 - [x] 6.12 Alterando a estratégia de fetching para Lazy Loading                                                   16m 39s
 - [x] 6.13 Alterando a estratégia de fetching para Eager Loading                                                  2m 31s
-- [ ] 6.14 Resolvendo o Problema do N+1 com fetch join na JPQL                                                    7m 52s
+- [x] 6.14 Resolvendo o Problema do N+1 com fetch join na JPQL                                                    7m 52s
 </pre>
 
 ##### 7. Pool de conexões e Flyway
