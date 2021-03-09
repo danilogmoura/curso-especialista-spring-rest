@@ -159,9 +159,9 @@
 
 ##### 7. Pool de conexões e Flyway
 <pre>
-- [ ] 7.1 Entendendo o funcionamento de um pool de conexões                                                       17m 53s
-- [ ] 7.2 Conhecendo o Hikari: a solução padrão de pool de conexões no Spring Boot                                10m 18s
-- [ ] 7.3 Configurando o pool de conexões do Hikari                                                               8m 56s
+- [x] 7.1 Entendendo o funcionamento de um pool de conexões                                                       17m 53s
+- [x] 7.2 Conhecendo o Hikari: a solução padrão de pool de conexões no Spring Boot                                10m 18s
+- [x] 7.3 Configurando o pool de conexões do Hikari                                                               8m 56s
 - [ ] 7.4 Schema generation em produção não é uma boa prática                                                     10m 1s
 - [ ] 7.5 Flyway: ferramenta de versionamento de schemas de banco de dados                                        20m 39s
 - [ ] 7.6 Adicionando o Flyway no projeto e criando a primeira migração                                           19m 6s
