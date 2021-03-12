@@ -1,6 +1,6 @@
 package com.algaworks.algafood.api.controller;
 
-import com.algaworks.algafood.domain.excption.EntidadeNaoEncontradaException;
+import com.algaworks.algafood.domain.excption.CozinhaNaoEncontradaException;
 import com.algaworks.algafood.domain.excption.NegocioException;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
@@ -20,8 +20,10 @@ import java.util.Map;
 @RequestMapping("/restaurantes")
 public class RestauranteController {
 
+    @Autowired
     private RestauranteRepository restauranteRepository;
 
+    @Autowired
     private CadastroRestauranteService cadastroRestaurante;
 
     @GetMapping
@@ -39,20 +41,19 @@ public class RestauranteController {
     public Restaurante adicionar(@RequestBody Restaurante restaurante) {
         try {
             return cadastroRestaurante.salvar(restaurante);
-        } catch (EntidadeNaoEncontradaException e) {
-            throw new NegocioException(e.getMessage());
+        } catch (CozinhaNaoEncontradaException e) {
+            throw new NegocioException(e.getMessage(), e);
         }
     }
 
     @PutMapping("/{id}")
     public Restaurante atualizar(@PathVariable Long id, @RequestBody Restaurante restaurante) {
-        Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(id);
-        BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco", "dataCadastro");
-
         try {
+            Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(id);
+            BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco", "dataCadastro");
             return cadastroRestaurante.salvar(restauranteAtual);
-        } catch (EntidadeNaoEncontradaException e) {
-            throw new NegocioException(e.getMessage());
+        } catch (CozinhaNaoEncontradaException e) {
+            throw new NegocioException(e.getMessage(), e);
         }
     }
 
@@ -83,15 +84,5 @@ public class RestauranteController {
                 ReflectionUtils.setField(field, restauranteDestino, novoValor);
             }
         });
-    }
-
-    @Autowired
-    public void setRestauranteRepository(RestauranteRepository restauranteRepository) {
-        this.restauranteRepository = restauranteRepository;
-    }
-
-    @Autowired
-    public void setCadastroRestaurante(CadastroRestauranteService cadastroRestaurante) {
-        this.cadastroRestaurante = cadastroRestaurante;
     }
 }

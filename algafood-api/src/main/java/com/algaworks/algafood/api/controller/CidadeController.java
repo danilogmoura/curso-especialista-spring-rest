@@ -16,8 +16,10 @@ import java.util.List;
 @RequestMapping("/cidades")
 public class CidadeController {
 
+    @Autowired
     private CidadeRepository cidadeRepository;
 
+    @Autowired
     private CadastroCidadeService cadastroCidade;
 
     @GetMapping
@@ -56,15 +58,5 @@ public class CidadeController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void remover(@PathVariable Long id) {
         cadastroCidade.remover(id);
-    }
-
-    @Autowired
-    public void setCidadeRepository(CidadeRepository cidadeRepository) {
-        this.cidadeRepository = cidadeRepository;
-    }
-
-    @Autowired
-    public void setCadastroCidade(CadastroCidadeService cadastroCidade) {
-        this.cadastroCidade = cadastroCidade;
     }
 }

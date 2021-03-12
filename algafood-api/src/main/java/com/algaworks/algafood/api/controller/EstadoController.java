@@ -14,8 +14,10 @@ import java.util.List;
 @RequestMapping("/estados")
 public class EstadoController {
 
+    @Autowired
     private EstadoRepository estadoRepository;
 
+    @Autowired
     private CadastroEstadoService cadastroEstado;
 
     @GetMapping
@@ -45,15 +47,5 @@ public class EstadoController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void remover(@PathVariable Long id) {
         cadastroEstado.remover(id);
-    }
-
-    @Autowired
-    public void setEstadoRepository(EstadoRepository estadoRepository) {
-        this.estadoRepository = estadoRepository;
-    }
-
-    @Autowired
-    public void setCadastroEstado(CadastroEstadoService cadastroEstado) {
-        this.cadastroEstado = cadastroEstado;
     }
 }

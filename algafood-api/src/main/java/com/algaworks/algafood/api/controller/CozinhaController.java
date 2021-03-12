@@ -14,8 +14,10 @@ import java.util.List;
 @RequestMapping(value = "/cozinhas")
 public class CozinhaController {
 
+    @Autowired
     private CozinhaRepository cozinhaRepository;
 
+    @Autowired
     private CadastroCozinhaService cadastroCozinha;
 
     @GetMapping
@@ -45,15 +47,5 @@ public class CozinhaController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void remover(@PathVariable Long cozinhaId) {
         cadastroCozinha.excluir(cozinhaId);
-    }
-
-    @Autowired
-    public void setCozinhaRepository(CozinhaRepository cozinhaRepository) {
-        this.cozinhaRepository = cozinhaRepository;
-    }
-
-    @Autowired
-    public void setCadastroCozinha(CadastroCozinhaService cadastroCozinha) {
-        this.cadastroCozinha = cadastroCozinha;
     }
 }
