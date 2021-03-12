@@ -180,7 +180,7 @@
 - [x] 8.3 Lançando exceções do tipo ResponseStatusException                                                       6m 50s
 - [x] 8.4 Estendendo ResponseStatusException                                                                      8m 9s
 - [x] 8.5 Simplificando o código com o uso de @ResponseStatus em exceptions                                       11m 43s
-- [ ] 8.6 Desafio: refatorando os serviços REST                                                                   1m 34s
+- [x] 8.6 Desafio: refatorando os serviços REST                                                                   1m 34s
 - [ ] 8.7 Analisando os impactos da refatoração                                                                   8m 13s
 - [ ] 8.8 Criando a exception NegocioException                                                                    11m 54s
 - [ ] 8.9 Desafio: usando a exception NegocioException                                                            0m 51s

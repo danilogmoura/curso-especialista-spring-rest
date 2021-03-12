@@ -1,6 +1,5 @@
 package com.algaworks.algafood.api.controller;
 
-import com.algaworks.algafood.domain.excption.EntidadeNaoEncontradaException;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
 import com.algaworks.algafood.domain.service.CadastroRestauranteService;
@@ -8,7 +7,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,63 +23,37 @@ public class RestauranteController {
     private CadastroRestauranteService cadastroRestaurante;
 
     @GetMapping
-    @ResponseStatus(HttpStatus.OK)
     public List<Restaurante> listar() {
         return restauranteRepository.findAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Restaurante> buscar(@PathVariable Long id) {
-        return restauranteRepository.findById(id)
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+    public Restaurante buscar(@PathVariable Long id) {
+        return cadastroRestaurante.buscarOuFalhar(id);
     }
 
     @PostMapping
-    public ResponseEntity<?> adicionar(@RequestBody Restaurante restaurante) {
-        try {
-            restaurante = cadastroRestaurante.salvar(restaurante);
-            return ResponseEntity.status(HttpStatus.CREATED).body(restaurante);
-        } catch (EntidadeNaoEncontradaException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        }
+    @ResponseStatus(HttpStatus.CREATED)
+    public Restaurante adicionar(@RequestBody Restaurante restaurante) {
+        return cadastroRestaurante.salvar(restaurante);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> atualizar(@PathVariable Long id, @RequestBody Restaurante restaurante) {
-        Restaurante restauranteAtual = restauranteRepository.findById(id).orElse(null);
-
-        if (restauranteAtual == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        try {
-            BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco", "dataCadastro");
-            restauranteAtual = cadastroRestaurante.salvar(restauranteAtual);
-            return ResponseEntity.ok(restauranteAtual);
-        } catch (EntidadeNaoEncontradaException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        }
+    public Restaurante atualizar(@PathVariable Long id, @RequestBody Restaurante restaurante) {
+        Restaurante restauranteAtual = cadastroRestaurante.buscarOuFalhar(id);
+        BeanUtils.copyProperties(restaurante, restauranteAtual, "id", "formasPagamento", "endereco", "dataCadastro");
+        return cadastroRestaurante.salvar(restauranteAtual);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Restaurante> remover(@PathVariable Long id) {
-        try {
-            cadastroRestaurante.remove(id);
-            return ResponseEntity.ok().build();
-        } catch (EntidadeNaoEncontradaException e) {
-            return ResponseEntity.notFound().build();
-        }
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void remover(@PathVariable Long id) {
+        cadastroRestaurante.remove(id);
     }
 
     @PatchMapping("/{id}")
-    public ResponseEntity<?> atualizarParcial(@PathVariable Long id, @RequestBody Map<String, Object> campos) {
-        Restaurante restauranteDestino = restauranteRepository.findById(id).orElse(null);
-
-        if (restauranteDestino == null) {
-            return ResponseEntity.notFound().build();
-        }
-
+    public Restaurante atualizarParcial(@PathVariable Long id, @RequestBody Map<String, Object> campos) {
+        Restaurante restauranteDestino = cadastroRestaurante.buscarOuFalhar(id);
         merge(campos, restauranteDestino);
         return atualizar(id, restauranteDestino);
     }

@@ -17,6 +17,13 @@ public class CadastroCozinhaService {
 
     private CozinhaRepository cozinhaRepository;
 
+    public Cozinha buscarOuFalhar(Long id) {
+        return cozinhaRepository
+                .findById(id)
+                .orElseThrow(()
+                        -> new EntidadeNaoEncontradaException(String.format(MSG_COZINHA_NAO_ENCONTRADA, id)));
+    }
+
     public Cozinha salvar(Cozinha cozinha) {
         return cozinhaRepository.save(cozinha);
     }
@@ -25,25 +32,14 @@ public class CadastroCozinhaService {
         try {
             cozinhaRepository.deleteById(cozinhaId);
         } catch (EmptyResultDataAccessException e) {
-            throw new EntidadeNaoEncontradaException(
-                    String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId)
-            );
+            throw new EntidadeNaoEncontradaException(String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId));
         } catch (DataIntegrityViolationException e) {
-            throw new EntidadeEmUsoException(
-                    String.format(MSG_COZINHA_EM_USO, cozinhaId)
-            );
+            throw new EntidadeEmUsoException(String.format(MSG_COZINHA_EM_USO, cozinhaId));
         }
     }
 
     @Autowired
     public void setCozinhaRepository(CozinhaRepository cozinhaRepository) {
         this.cozinhaRepository = cozinhaRepository;
-    }
-
-    public Cozinha buscarOuFalhar(Long id) {
-        return cozinhaRepository
-                .findById(id)
-                .orElseThrow(()
-                        -> new EntidadeNaoEncontradaException(String.format(MSG_COZINHA_NAO_ENCONTRADA, id)));
     }
 }

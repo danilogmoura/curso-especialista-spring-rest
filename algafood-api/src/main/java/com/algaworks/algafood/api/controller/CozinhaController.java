@@ -26,14 +26,6 @@ public class CozinhaController {
     @GetMapping("/{cozinhaId}")
     public Cozinha buscar(@PathVariable Long cozinhaId) {
         return cadastroCozinha.buscarOuFalhar(cozinhaId);
-
-//        return cozinhaRepository
-//                .findById(cozinhaId)
-//                .orElseThrow(() -> new EntidadeNaoEncontradaException("aaa"));
-
-//        return cozinhaRepository.findById(cozinhaId)
-//                .map(ResponseEntity::ok)
-//                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping
