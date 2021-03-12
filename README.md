@@ -191,8 +191,8 @@
 - [x] 8.14 Desafio: implementando exception handler                                                               2m 17s
 - [x] 8.15 Criando um exception handler global com ResponseEntityExceptionHandler                                 6m 13s
 - [x] 8.16 Customizando o corpo da resposta padrão de ResponseEntityExceptionHandler                              11m 15s
-- [ ] 8.17 Conhecendo a RFC 7807 (Problem Details for HTTP APIs)                                                  11m 12s
-- [ ] 8.18 Padronizando o formato de problemas no corpo de respostas com a RFC 7807                               23m 3s
+- [x] 8.17 Conhecendo a RFC 7807 (Problem Details for HTTP APIs)                                                  11m 12s
+- [x] 8.18 Padronizando o formato de problemas no corpo de respostas com a RFC 7807                               23m 3s
 - [ ] 8.19 Desafio: usando o formato de problemas no corpo de respostas                                           1m 38s
 - [ ] 8.20 Customizando exception handlers de ResponseEntityExceptionHandler                                      6m 30s
 - [ ] 8.21 Tratando a exception InvalidFormatException na desserialização                                         18m 25s
