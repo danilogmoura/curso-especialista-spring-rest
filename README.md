@@ -188,7 +188,7 @@
 - [x] 8.11 Desafio: lançando exceptions de granularidade fina                                                     1m 39s
 - [x] 8.12 Tratando exceções em nível de controlador com @ExceptionHandler                                        11m 49s
 - [x] 8.13 Tratando exceções globais com @ExceptionHandler e @ControllerAdvice                                    6m 9s
-- [ ] 8.14 Desafio: implementando exception handler                                                               2m 17s
+- [x] 8.14 Desafio: implementando exception handler                                                               2m 17s
 - [ ] 8.15 Criando um exception handler global com ResponseEntityExceptionHandler                                 6m 13s
 - [ ] 8.16 Customizando o corpo da resposta padrão de ResponseEntityExceptionHandler                              11m 15s
 - [ ] 8.17 Conhecendo a RFC 7807 (Problem Details for HTTP APIs)                                                  11m 12s
