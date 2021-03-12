@@ -184,7 +184,7 @@
 - [x] 8.7 Analisando os impactos da refatoração                                                                   8m 13s
 - [x] 8.8 Criando a exception NegocioException                                                                    11m 54s
 - [x] 8.9 Desafio: usando a exception NegocioException                                                            0m 51s
-- [ ] 8.10 Afinando a granularidade e definindo a hierarquia das exceptions de negócios                           19m 51s
+- [x] 8.10 Afinando a granularidade e definindo a hierarquia das exceptions de negócios                           19m 51s
 - [ ] 8.11 Desafio: lançando exceptions de granularidade fina                                                     1m 39s
 - [ ] 8.12 Tratando exceções em nível de controlador com @ExceptionHandler                                        11m 49s
 - [ ] 8.13 Tratando exceções globais com @ExceptionHandler e @ControllerAdvice                                    6m 9s
