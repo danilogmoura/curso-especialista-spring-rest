@@ -186,7 +186,7 @@
 - [x] 8.9 Desafio: usando a exception NegocioException                                                            0m 51s
 - [x] 8.10 Afinando a granularidade e definindo a hierarquia das exceptions de negócios                           19m 51s
 - [x] 8.11 Desafio: lançando exceptions de granularidade fina                                                     1m 39s
-- [ ] 8.12 Tratando exceções em nível de controlador com @ExceptionHandler                                        11m 49s
+- [x] 8.12 Tratando exceções em nível de controlador com @ExceptionHandler                                        11m 49s
 - [ ] 8.13 Tratando exceções globais com @ExceptionHandler e @ControllerAdvice                                    6m 9s
 - [ ] 8.14 Desafio: implementando exception handler                                                               2m 17s
 - [ ] 8.15 Criando um exception handler global com ResponseEntityExceptionHandler                                 6m 13s
