@@ -201,7 +201,7 @@
 - [x] 8.24 Lançando exception de desserialização na atualização parcial (PATCH)                                   13m 46s
 - [x] 8.25 Desafio: tratando exception de parâmetro de URL inválido                                               3m 12s
 - [x] 8.26 Desafio: tratando a exceção NoHandlerFoundException                                                    5m 34s
-- [ ] 8.27 Desafio: tratando outras exceções não capturadas                                                       2m 22s
+- [x] 8.27 Desafio: tratando outras exceções não capturadas                                                       2m 22s
 - [ ] 8.28 Estendendo o formato do problema para adicionar novas propriedades                                     10m 22s
 - [ ] 8.29 Desafio: estendendo o formato do problema                                                              3m 11s
 </pre>
