@@ -196,7 +196,7 @@
 - [x] 8.19 Desafio: usando o formato de problemas no corpo de respostas                                           1m 38s
 - [x] 8.20 Customizando exception handlers de ResponseEntityExceptionHandler                                      6m 30s
 - [x] 8.21 Tratando a exception InvalidFormatException na desserialização                                         18m 25s
-- [ ] 8.22 Habilitando erros na desserialização de propriedades inexistentes ou ignoradas                         6m 38s
+- [x] 8.22 Habilitando erros na desserialização de propriedades inexistentes ou ignoradas                         6m 38s
 - [ ] 8.23 Desafio: tratando a PropertyBindingException na desserialização                                        3m 22s
 - [ ] 8.24 Lançando exception de desserialização na atualização parcial (PATCH)                                   13m 46s
 - [ ] 8.25 Desafio: tratando exception de parâmetro de URL inválido                                               3m 12s
